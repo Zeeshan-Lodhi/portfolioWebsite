@@ -1,0 +1,141 @@
+.about {
+    height: 100vh;
+    display: flex;
+    margin-top: 45px;
+}
+
+.a-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.a-card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.a-card.bg {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 57px;
+    left: 79px;
+    height: 70vh;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.a-img {
+    width: 60%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* About right */
+.a-right {
+    font-family: 'Righteous',
+        cursive;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-para {
+    color: #000000b8;
+    font-size: 22px;
+    width: 100%;
+}
+
+.about-head {
+    font-family: 'Righteous',
+        cursive;
+}
+
+.certImg {
+    object-fit: cover;
+    width: 25%;
+    height: 121%;
+}
+
+/* .cert-heading {
+    font-family: 'Righteous',
+        cursive;
+    color: #000000b8;
+
+} */
+
+@media only screen and (max-width: 460px) {
+
+    .about {
+        height: 100vh;
+        margin-top: 148px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-img {
+        width: 60%;
+        height: 40vh;
+
+    }
+
+    .a-left {
+        left: 48px;
+    }
+
+    .about-para {
+        font-size: 19px;
+    }
+
+    .cert-para {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .a-right {
+        padding: 64px;
+        width: 429px;
+        margin-top: -28px;
+    }
+
+    .certImg {
+        height: 84%;
+        width: 31%;
+        margin-bottom: 6px;
+        margin-right: 6px
+    }
+
+    .a-card.bg {
+        left: 51px;
+        top: -20px;
+        height: 39vh;
+        width: 52vw
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .a-card.bg {
+        left: 55px;
+        top: -15px;
+        height: 39vh;
+        width: 57vw;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .a-left {
+        left: 24px;
+    }
+
+    .a-right {
+        margin-bottom: 100px;
+    }
+
+}

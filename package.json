@@ -1,14 +1,24 @@
 {
-  "name": "reactpractise",
+  "name": "2022",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "3d-react-carousal": "^5.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^0.26.1",
+    "emailjs-com": "^3.2.0",
+    "jquery": "^3.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

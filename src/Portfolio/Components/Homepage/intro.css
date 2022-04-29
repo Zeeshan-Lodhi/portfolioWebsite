@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*,
+body {
+    font-family: 'Righteous', cursive;
+}
+
+html,
+body {
+    height: 243%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
+    width: 100vw;
+}
+
+/* This is for left sside of the intro page */
+.intro-left {
+    color: white;
+    z-index: 1;
+    padding: 100px;
+    flex: 1;
+}
+
+.left-wrapper {
+    margin-left: 44px;
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+video {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-name {
+    font-family: 'Righteous',
+        cursive;
+    font-weight: 300;
+}
+
+.skill {
+    font-family: 'Righteous',
+        cursive;
+}
+
+.intro-name2 {
+    font-family: 'Righteous',
+        cursive;
+    font-size: 31px;
+    animation: text infinite ease-in-out 1s both;
+    margin-left: 8px;
+    margin-top: -51px
+}
+
+@keyframes text {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* For typewrite effent */
+.title-item {
+    margin-top: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #86EC64;
+    margin-left: 11px;
+}
+
+a:hover {
+    transform: translateY(2px);
+}
+
+/* CSS for sidebar menu(social icons) */
+.sticky-social {
+    z-index: 1001;
+    position: fixed;
+    top: 34%;
+    left: -28px;
+    padding: 0px;
+    margin: 0px
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    padding: 10px 10px;
+    font-size: 25px;
+    transition: all 0.8s ease-in-out;
+}
+
+.social li:hover {
+    margin-right: -30px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+.social li:hover .fa {
+    margin-left: 20px;
+
+}
+
+.fa {
+    color: #fff;
+    transition: all 0.8s ease-in-out;
+}
+
+.fb {
+    background-color: #3C5A98;
+}
+
+.github {
+    background-color: #1EA1F2;
+}
+
+.insta {
+    background-color: #CB2128;
+}
+
+.linkedin {
+    background-color: #DC4F42;
+}
+
+
+
+/* Button for download cv */
+.btn {
+    --color: #37911a;
+    color: white !important;
+    padding: 0.8em 1.7em;
+    border: 1px solid #37911a !important;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.btn::before {
+    top: -1em;
+    left: -1em;
+}
+
+.btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    height: 410px;
+    width: 314px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:active {
+    filter: brightness(.8);
+}
+
+/* This is for intro right seaction */
+.intro-right {
+    height: 100vh;
+    flex: 1;
+    position: relative;
+}
+
+.right-img {
+    height: 108%;
+    width: 732px;
+    object-fit: cover;
+    position: absolute;
+    right: -82px;
+    bottom: -61px;
+}
+
+/* Scrool to top button */
+.scrollToTop {
+    cursor: pointer;
+    left: 50%;
+    position: fixed;
+    bottom: 0;
+    z-index: 400;
+    width: 44px;
+    height: 37px;
+    border-radius: 5px;
+}
+
+.arrow-icon {
+    color: #37911a;
+    left: 18%;
+    top: 21%;
+    position: relative;
+    font-size: 30px;
+}
+
+/* For whatsapp button */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 2px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 460px) {
+
+    html,
+    body {
+        height: 249%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    /* Media query for sidebar menu */
+    .social li {
+        padding: 5px 7px;
+        text-align: center;
+    }
+
+    .social li:hover {
+        margin-right: -10px;
+        box-shadow: 2px 5px 10px grey;
+    }
+
+    .social li:hover .fa {
+        margin-left: 8px;
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+    }
+
+    video {
+        height: 105% !important;
+    }
+
+    .intro-left {
+        padding: 17px;
+    }
+
+    .left-wrapper {
+        margin-top: 40px !important;
+    }
+
+    .skill,
+    .title-item {
+        margin-top: -28px !important;
+    }
+
+    .intro-name {
+        width: 340px;
+        margin-left: -10px;
+    }
+
+    .intro-name2 {
+        width: 350px;
+        margin-top: -32px;
+        font-size: 28px;
+        margin-top: -43px;
+        margin-left: -3px;
+    }
+
+
+    .title-item-wrapper {
+        width: 350px;
+    }
+
+    .title-item {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 177px;
+        padding: 14px
+    }
+
+    .right-img {
+        height: 55vh;
+        width: 510px;
+        top: 5% !important;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+
+
+    .right-img {
+        top: -5%;
+        right: -95px;
+        height: 55vh;
+        width: 510px;
+    }
+
+    .left-wrapper {
+        margin-top: 60px;
+    }
+
+
+    video {
+        height: 115%;
+    }
+
+}
+
+
+/* for mobile (whatsapp button) */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        font-size: 22px;
+    }
+}

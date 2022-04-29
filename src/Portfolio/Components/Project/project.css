@@ -1,0 +1,88 @@
+.crosal {
+    height: 94vh;
+    background-color: #f2f4f27e;
+}
+
+
+.carousel-inner {
+    margin: auto;
+    position: relative;
+    width: 72%;
+    overflow: hidden;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+.sr-only {
+    color: black !important;
+}
+
+.carousel-caption {
+    top: 50%;
+}
+
+.crosal-main-heading,
+.crosal-heading {
+    font-family: 'Righteous',
+        cursive;
+    font-size: 33px;
+}
+
+.crosal-para {
+    margin: auto;
+    width: 42%;
+    font-size: 19px;
+}
+
+@media only screen and (max-width: 460px) {
+    .crosal {
+        margin-top: 22px;
+        height: 30vh;
+        margin-left: 29px;
+    }
+
+    .crosal-main-heading {
+        font-size: 18px;
+    }
+
+    .crosal-para {
+        font-size: 13px;
+        width: 106%;
+    }
+
+    .crosal-heading {
+        font-size: 17px;
+        margin-top: 40px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 0;
+        right: 10px;
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-caption {
+        top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .crosal {
+        margin-top: 45px;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .crosal-heading {
+        margin-top: 0px !important;
+    }
+}
